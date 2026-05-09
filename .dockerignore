@@ -1,0 +1,31 @@
+# Git & IDE
+.git
+.gitignore
+.cursor
+.idea
+*.iml
+.vscode
+*.swp
+*.swo
+
+# Build outputs (rebuilt inside Docker)
+target/
+**/target/
+
+# Local WAL / data (never bake host state into the image)
+data/
+**/data/wal/
+
+# Benchmark artifacts
+benchmark/results/
+*.jtl
+
+# Docs (not needed to compile)
+docs/
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log

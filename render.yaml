@@ -1,0 +1,22 @@
+# Render Blueprint — https://render.com/docs/blueprint-spec
+# Adjust plan, region, and disk to your needs.
+
+services:
+  - type: web
+    name: memtsdb
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    healthCheckPath: /api/v1/health
+    envVars:
+      - key: SPRING_PROFILES_ACTIVE
+        value: prod
+      - key: JAVA_OPTS
+        value: "-XX:+UseContainerSupport -XX:MaxRAMPercentage=75.0 -XX:+ExitOnOutOfMemoryError"
+      - key: MEMTSDB_WAL_PATH
+        value: /data/wal/metrics.wal
+    # Persistent WAL — uncomment when your Render plan supports disks for Docker Web Services
+    # disk:
+    #   name: memtsdb-wal
+    #   mountPath: /data/wal
+    #   sizeGB: 2
