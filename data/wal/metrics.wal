@@ -1,2 +1,5 @@
 {"metric":"cpu_usage","timestamp":1710000000,"value":75.5,"tags":{"host":"server-1","region":"us-east"}}
 {"metric":"cpu_usage","timestamp":1710000100,"value":80.1,"tags":{"host":"server-2","region":"us-west"}}
+{"metric":"cpu_usage","timestamp":1710000000,"value":75.5,"tags":{"host":"server-1"}}
+{"metric":"cpu_usage","timestamp":1710000000,"value":75.5,"tags":{"host":"server-3"}}
+{"metric":"cpu_usage","timestamp":1710000000,"value":75.5,"tags":{"host":"server-3"}}

@@ -2,6 +2,7 @@ com/tsdb/memtsdb/MemtsdbApplication.class
 com/tsdb/memtsdb/storage/TimeSeriesStore.class
 com/tsdb/memtsdb/model/DataPoint.class
 com/tsdb/memtsdb/persistence/WALProperties.class
+com/tsdb/memtsdb/config/WebConfig.class
 com/tsdb/memtsdb/api/GlobalExceptionHandler.class
 com/tsdb/memtsdb/model/MetricPointResponse.class
 com/tsdb/memtsdb/model/QueryExecutionMeta.class
