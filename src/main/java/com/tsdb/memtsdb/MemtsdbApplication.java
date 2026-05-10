@@ -1,5 +1,6 @@
 package com.tsdb.memtsdb;
 
+import com.tsdb.memtsdb.config.CorsProperties;
 import com.tsdb.memtsdb.persistence.WALProperties;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -26,7 +27,7 @@ import org.springframework.boot.context.properties.EnableConfigurationProperties
  * sorted chunks (e.g., LSM trees, sorted runs): locality + pruning + merge-friendly layouts.
  */
 @SpringBootApplication
-@EnableConfigurationProperties(WALProperties.class)
+@EnableConfigurationProperties({WALProperties.class, CorsProperties.class})
 public class MemtsdbApplication {
 
     public static void main(String[] args) {

@@ -1,6 +1,7 @@
 /Users/tripatjot/Documents/memtsdb/src/main/java/com/tsdb/memtsdb/MemtsdbApplication.java
 /Users/tripatjot/Documents/memtsdb/src/main/java/com/tsdb/memtsdb/api/GlobalExceptionHandler.java
 /Users/tripatjot/Documents/memtsdb/src/main/java/com/tsdb/memtsdb/api/MetricController.java
+/Users/tripatjot/Documents/memtsdb/src/main/java/com/tsdb/memtsdb/config/CorsProperties.java
 /Users/tripatjot/Documents/memtsdb/src/main/java/com/tsdb/memtsdb/config/OpenApiConfig.java
 /Users/tripatjot/Documents/memtsdb/src/main/java/com/tsdb/memtsdb/config/WebConfig.java
 /Users/tripatjot/Documents/memtsdb/src/main/java/com/tsdb/memtsdb/dictionary/MetricDictionary.java
